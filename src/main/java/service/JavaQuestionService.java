@@ -14,7 +14,7 @@ public class JavaQuestionService implements QuestionService {
     public Question add(String questionText, String answerText) {
         Question question = new Question(questionText, answerText);
         if (questions.contains(question)) {
-            throw new IllegalArgumentException("Такой вопрос уже существует " + questionText);
+            throw new IllegalArgumentException("Такой вопрос уже существует" + questionText);
         }
         questions.add(question);
         return question;
